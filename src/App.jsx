@@ -386,6 +386,63 @@ const INTERACTION_GUIDE = [
   },
 ]
 
+// ─────────────────────────────────────────────────────────────────────────────
+// BACKPACKING GUIDE DATA
+// ─────────────────────────────────────────────────────────────────────────────
+const BG_GEAR = [
+  // Shelter
+  { cat: 'Shelter', icon: '⛺', name: 'Lightweight 2-Person Backpacking Tent', desc: 'Look for anything under 4 lbs. Free-standing tents are easiest for beginners — no guylines to figure out in the dark. Setup takes 5 minutes once you know it.', price: '$150–$350', badge: 'Must Have', url: 'https://www.amazon.com/s?k=lightweight+backpacking+tent+2+person+freestanding&tag=runbears-20' },
+  { cat: 'Shelter', icon: '🛏️', name: '20°F Sleeping Bag', desc: 'Arkansas nights dip to 40°F+ even in spring and fall. A 20°F bag gives you a comfortable margin. Synthetic fills are more forgiving if the bag gets damp.', price: '$80–$200', badge: 'Must Have', url: 'https://www.amazon.com/s?k=20+degree+synthetic+backpacking+sleeping+bag&tag=runbears-20' },
+  { cat: 'Shelter', icon: '🧩', name: 'Sleeping Pad', desc: 'Insulates you from cold ground — more critical than your sleeping bag for warmth. A foam Z-Lite pad ($50) is foolproof; an inflatable pad is lighter and more comfortable.', price: '$50–$180', badge: 'Must Have', url: 'https://www.amazon.com/s?k=backpacking+sleeping+pad+insulated&tag=runbears-20' },
+  // Pack
+  { cat: 'Pack', icon: '🎒', name: '50–65L Backpacking Pack', desc: 'For a 3-night trip, 55L is the sweet spot. Look for an internal frame and a hip belt that fits your torso length — 80% of the weight should ride on your hips, not your shoulders.', price: '$120–$300', badge: 'Must Have', url: 'https://www.amazon.com/s?k=55L+backpacking+pack+internal+frame&tag=runbears-20' },
+  { cat: 'Pack', icon: '🌧️', name: 'Pack Rain Cover', desc: 'Arkansas spring storms can drench you without warning. A rain cover keeps your sleeping bag dry. Many packs include one, but buy a backup if not.', price: '$15–$30', badge: 'Important', url: 'https://www.amazon.com/s?k=backpack+rain+cover+55L&tag=runbears-20' },
+  // Water
+  { cat: 'Water', icon: '💧', name: 'Sawyer Squeeze Water Filter', desc: 'The gold standard for beginner backpackers. Filters 100,000 gallons lifetime and weighs only 3 oz. Squeeze directly from a dirty water bag through the filter into your bottle. Never leave home without it.', price: '$32', badge: 'Critical', url: 'https://www.amazon.com/s?k=sawyer+squeeze+water+filter+kit&tag=runbears-20' },
+  { cat: 'Water', icon: '💊', name: 'Aquatabs Purification Tablets', desc: 'Backup to your Sawyer. If your filter freezes, gets dropped in a river, or clogs, these save your trip. One tablet treats 1 liter in 30 minutes. Pack 20 tablets.', price: '$9', badge: 'Backup', url: 'https://www.amazon.com/s?k=aquatabs+water+purification+tablets+backpacking&tag=runbears-20' },
+  { cat: 'Water', icon: '🫙', name: 'Platypus 2L Soft Water Bottle', desc: 'Collapsible dirty-water reservoir that works with the Sawyer. Fill from a stream, squeeze through the filter. Weighs almost nothing when empty.', price: '$12', badge: 'Pairs with Sawyer', url: 'https://www.amazon.com/s?k=platypus+soft+bottle+2L+water+filter+reservoir&tag=runbears-20' },
+  // Cooking
+  { cat: 'Cooking', icon: '🔥', name: 'MSR PocketRocket 2 Stove', desc: 'Boils 1 liter of water in 3.5 minutes. Weighs 2.6 oz. Collapses to the size of a golf ball. The most popular beginner backpacking stove for good reason.', price: '$49', badge: 'Must Have', url: 'https://www.amazon.com/s?k=MSR+PocketRocket+2+camp+stove&tag=runbears-20' },
+  { cat: 'Cooking', icon: '⛽', name: 'Isobutane Fuel Canister (110g)', desc: 'One 110g canister is plenty for 3 nights for 2 people (boiling water for meals + coffee). Buy the brand that matches your stove thread.', price: '$8', badge: 'Required', url: 'https://www.amazon.com/s?k=isobutane+fuel+canister+110g+backpacking+stove&tag=runbears-20' },
+  { cat: 'Cooking', icon: '🥘', name: 'Titanium Pot 750ml', desc: 'Light enough to forget you packed it. Boils water for freeze-dried meals and doubles as your eating bowl. Titanium is lightest; aluminum works and costs less.', price: '$25–$55', badge: 'Must Have', url: 'https://www.amazon.com/s?k=titanium+backpacking+pot+750ml+lid&tag=runbears-20' },
+  { cat: 'Cooking', icon: '🥄', name: 'Long-Handle Spork (Titanium)', desc: 'The only utensil you need. Long handle reaches the bottom of freeze-dried meal pouches. Weighs 0.6 oz. Titanium lasts forever.', price: '$10', badge: 'Simple Win', url: 'https://www.amazon.com/s?k=titanium+long+spork+backpacking&tag=runbears-20' },
+  // Navigation & Safety
+  { cat: 'Navigation', icon: '📍', name: 'Garmin inReach Mini 2', desc: 'Two-way satellite messenger + SOS. If you twist an ankle 8 miles from the trailhead with no cell signal, this calls rescue. For a first trip in Arkansas backcountry, seriously consider it.', price: '$349', badge: 'Safety', url: 'https://www.amazon.com/s?k=Garmin+inReach+Mini+2+satellite+communicator&tag=runbears-20' },
+  { cat: 'Navigation', icon: '🧭', name: 'Suunto A-10 Compass', desc: 'Download your trail map on AllTrails before you leave (offline mode) — cell signal in the Ouachitas and Ozarks is unreliable. A basic compass is your fallback if your phone dies.', price: '$25', badge: 'Safety', url: 'https://www.amazon.com/s?k=suunto+A10+baseplate+compass+hiking&tag=runbears-20' },
+  // Lighting
+  { cat: 'Lighting', icon: '🔦', name: 'Black Diamond Spot 400 Headlamp', desc: 'Bright enough to hike at night, light enough to forget you\'re wearing it. Hands-free lighting is essential for camp setup, midnight bathroom trips, and cooking after dark.', price: '$49', badge: 'Must Have', url: 'https://www.amazon.com/s?k=Black+Diamond+Spot+400+headlamp+hiking&tag=runbears-20' },
+  { cat: 'Lighting', icon: '🔋', name: 'Extra AAA Batteries or Backup Power Bank', desc: 'Cold temps and heavy use drain batteries faster than expected. Pack a set of spares or bring a small USB power bank for your phone and headlamp.', price: '$15–$30', badge: 'Smart', url: 'https://www.amazon.com/s?k=small+lightweight+power+bank+hiking&tag=runbears-20' },
+  // First Aid
+  { cat: 'First Aid', icon: '🩺', name: 'Adventure Medical Kits Ultralight .7', desc: 'Pre-assembled backcountry kit covering blisters, cuts, sprains, and mild allergic reactions. Add: tweezers (ticks), moleskin, ibuprofen, and antihistamine (Benadryl).', price: '$35', badge: 'Safety', url: 'https://www.amazon.com/s?k=adventure+medical+kit+ultralight+backpacking&tag=runbears-20' },
+  { cat: 'First Aid', icon: '🦟', name: 'Permethrin Clothing Treatment Spray', desc: 'Arkansas has dense Lone Star tick populations and chiggers year-round. Treat your clothing and tent with Permethrin before you leave — it lasts through 6 washes and is odorless when dry.', price: '$14', badge: '🚨 Arkansas Critical', url: 'https://www.amazon.com/s?k=permethrin+spray+clothing+treatment+tick+repellent&tag=runbears-20' },
+  { cat: 'First Aid', icon: '🐻', name: 'UDAP Bear Spray', desc: 'Arkansas has a small Black Bear population. Clip it to your hip strap — accessible in under 3 seconds. 92% effective at stopping charges. More reliable than a firearm at close range.', price: '$39', badge: 'Recommended', url: 'https://www.amazon.com/s?k=UDAP+bear+spray+holster&tag=runbears-20' },
+  // Clothing
+  { cat: 'Clothing', icon: '🌧️', name: 'Packable Rain Jacket', desc: 'Arkansas spring and fall bring unpredictable afternoon thunderstorms. A packable rain jacket weighs 8 oz, packs to the size of a baseball, and keeps hypothermia at bay on a wet ridgeline.', price: '$60–$150', badge: 'Must Have', url: 'https://www.amazon.com/s?k=packable+rain+jacket+lightweight+hiking&tag=runbears-20' },
+  { cat: 'Clothing', icon: '🧦', name: 'Merino Wool Hiking Socks (3 pairs)', desc: 'Blisters end trips. Merino wool manages moisture, resists odor, and cushions hot spots that become blisters. Darn Tough and Smartwool are worth the price — one blister costs more in misery than a $25 pair of socks.', price: '$20–$25/pair', badge: 'Game Changer', url: 'https://www.amazon.com/s?k=darn+tough+merino+wool+hiking+socks&tag=runbears-20' },
+  // Tools
+  { cat: 'Tools', icon: '🪄', name: 'Collapsible Trekking Poles', desc: 'Reduce knee stress by 25% on descents, add stability on creek crossings, and help with balance on uneven Ozark and Ouachita terrain. Beginners who skip these almost always regret it.', price: '$50–$120', badge: 'Highly Recommended', url: 'https://www.amazon.com/s?k=collapsible+trekking+poles+lightweight+backpacking&tag=runbears-20' },
+  { cat: 'Tools', icon: '🔪', name: 'Pocket Knife or Multi-Tool', desc: 'Useful for gear repair, food prep, cutting moleskin for blisters, and first aid. A simple $20 Victorinox Swiss Army knife covers everything a first-timer needs.', price: '$20–$80', badge: 'Must Have', url: 'https://www.amazon.com/s?k=victorinox+swiss+army+knife+backpacking&tag=runbears-20' },
+  { cat: 'Tools', icon: '🧻', name: 'Trowel + WAG Bags', desc: 'You will need to dig a cat hole 6+ inches deep and 200 feet from water to bury human waste. Or use a WAG bag (pack-it-out system) required in some wilderness areas. This is part of Leave No Trace.', price: '$10–$15', badge: 'Required by LNT', url: 'https://www.amazon.com/s?k=backpacking+trowel+cat+hole+wag+bag&tag=runbears-20' },
+  { cat: 'Tools', icon: '🧼', name: 'Dr. Bronner\'s Soap + Hand Sanitizer', desc: 'Biodegradable soap for dishes, hands, and camp hygiene. Use 200+ feet from any water source. Pair with hand sanitizer before every meal — backcountry diarrhea is brutal.', price: '$8', badge: 'Hygiene', url: 'https://www.amazon.com/s?k=dr+bronners+backpacking+biodegradable+soap&tag=runbears-20' },
+]
+
+const BG_FOOD = [
+  { meal: 'Breakfast', name: 'Mountain House Granola with Milk & Blueberries', cals: 440, desc: 'Add boiling water, wait 8 minutes. 440 calories, 14g protein. One of the best freeze-dried breakfasts — actually tastes good on day 3.', url: 'https://www.amazon.com/s?k=mountain+house+granola+milk+blueberries+freeze+dried&tag=runbears-20' },
+  { meal: 'Breakfast', name: 'Backpacker\'s Pantry Colorado Omelet', cals: 400, desc: 'Eggs, cheese, and veggies in a pouch. High protein to start a hiking day. Just add hot water directly to the bag — no dishes.', url: 'https://www.amazon.com/s?k=backpackers+pantry+colorado+omelet+freeze+dried&tag=runbears-20' },
+  { meal: 'Breakfast', name: 'Starbucks VIA Instant Coffee (12-pack)', cals: 5, desc: 'Non-negotiable. Coffee at camp on a cold Ozark morning is a legitimate survival strategy. 4 packets per person for 3 nights.', url: 'https://www.amazon.com/s?k=starbucks+via+instant+coffee+packets+pike+place&tag=runbears-20' },
+  { meal: 'Lunch', name: 'Knorr Rice Sides (Chicken / Cheddar Broccoli)', cals: 320, desc: 'Budget-friendly, 320 calories, cooks in 7 minutes. Add a tuna packet for protein. The most popular budget backpacking lunch for a reason.', url: 'https://www.amazon.com/s?k=knorr+rice+sides+chicken+variety+pack&tag=runbears-20' },
+  { meal: 'Lunch', name: 'Wild Planet Albacore Tuna Packets (No Drain)', cals: 130, desc: 'High protein, no can to pack out, no draining required. Toss one in your Knorr rice or eat with crackers. Pack 3 per person per trip.', url: 'https://www.amazon.com/s?k=wild+planet+tuna+no+drain+packet&tag=runbears-20' },
+  { meal: 'Lunch', name: 'Mary\'s Gone Crackers (Gluten Free)', cals: 140, desc: 'Durable crackers that survive in a pack without crumbling. Eat with tuna, almond butter, or on their own. 140 calories per serving.', url: 'https://www.amazon.com/s?k=marys+gone+crackers+backpacking+snack&tag=runbears-20' },
+  { meal: 'Dinner', name: 'Mountain House Beef Stroganoff (2-serving)', cals: 710, desc: 'The classic. Add boiling water to the pouch, wait 9 minutes. Rich, filling, 710 calories for 2 servings. Tastes like actual food after a 10-mile day.', url: 'https://www.amazon.com/s?k=mountain+house+beef+stroganoff+freeze+dried+pouch&tag=runbears-20' },
+  { meal: 'Dinner', name: 'Mountain House Chicken & Dumplings (2-serving)', cals: 700, desc: 'Comfort food in the backcountry. 700 calories, 32g protein per pouch. Cook directly in the bag — zero dishes. Best eaten on night 2 as a morale booster.', url: 'https://www.amazon.com/s?k=mountain+house+chicken+dumplings+freeze+dried&tag=runbears-20' },
+  { meal: 'Dinner', name: 'Good To-Go Thai Curry (Vegan)', cals: 470, desc: 'Real ingredients, no artificial flavors. A step above standard freeze-dried meals. If you want to eat genuinely well in the wilderness, this is the move.', url: 'https://www.amazon.com/s?k=good+to+go+thai+curry+freeze+dried+backpacking&tag=runbears-20' },
+  { meal: 'Snacks', name: 'RXBAR Protein Bars (12-pack)', cals: 210, desc: 'Whole-food bars: egg whites, dates, nuts. 12g protein, 210 calories, no junk. Eat during rest breaks to maintain energy on long climbs.', url: 'https://www.amazon.com/s?k=rxbar+protein+bar+variety+pack&tag=runbears-20' },
+  { meal: 'Snacks', name: 'Justin\'s Almond Butter Packets', cals: 190, desc: 'Squeeze on crackers, a tortilla, or eat straight from the packet. Healthy fats that keep you full through long miles. 190 calories each.', url: 'https://www.amazon.com/s?k=justins+almond+butter+single+serve+packets&tag=runbears-20' },
+  { meal: 'Snacks', name: 'Good & Gather Trail Mix (Nuts / Chocolate)', cals: 160, desc: 'The most calorie-dense snack per ounce. Target 200+ calories per hour while moving. Pre-portion into zip bags before the trip.', url: 'https://www.amazon.com/s?k=trail+mix+nuts+chocolate+backpacking+bulk&tag=runbears-20' },
+  { meal: 'Snacks', name: 'Honey Stinger Energy Waffles', cals: 160, desc: 'A treat that doubles as fuel. Light, 160 calories, and they taste like a reward after a long climb. Great for the first mile when breakfast hasn\'t kicked in yet.', url: 'https://www.amazon.com/s?k=honey+stinger+waffle+energy+snack+variety&tag=runbears-20' },
+  { meal: 'Snacks', name: 'LMNT Electrolyte Packets', cals: 10, desc: 'Arkansas summer and spring humidity will drain your electrolytes fast. Add to your water bottle — prevents muscle cramps and fatigue far better than plain water. Critical on hot days.', url: 'https://www.amazon.com/s?k=LMNT+electrolyte+packets+variety+pack&tag=runbears-20' },
+]
+
 const GEAR = [
   {
     name: 'UDAP Bear Spray',
@@ -537,6 +594,7 @@ function Navbar({ openModal }) {
     ['Bear World', '#bearworld'],
     ['How to Interact', '#interact'],
     ['Gear Store', '#gear'],
+    ['Backpacking Guide', '#backpacking'],
     ['Sightings', '#sightings'],
   ]
   return (
@@ -1656,6 +1714,391 @@ function PrivacyModal({ onClose }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// BACKPACKING GUIDE
+// ─────────────────────────────────────────────────────────────────────────────
+const BG_CATS = ['All', 'Shelter', 'Pack', 'Water', 'Cooking', 'Navigation', 'Lighting', 'First Aid', 'Clothing', 'Tools']
+const MEAL_CATS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snacks']
+
+function BackpackingGuide() {
+  const [tab, setTab] = useState('plan')
+  const [gearCat, setGearCat] = useState('All')
+  const [mealCat, setMealCat] = useState('All')
+
+  const tabs = [
+    { key: 'plan',  label: '🗺️ Plan First' },
+    { key: 'gear',  label: '🎒 Gear List' },
+    { key: 'food',  label: '🍜 Food & Water' },
+    { key: 'fire',  label: '🔥 Fire & Camp' },
+    { key: 'watch', label: '⚠️ Watch Out For' },
+  ]
+
+  const filteredGear = gearCat === 'All' ? BG_GEAR : BG_GEAR.filter(g => g.cat === gearCat)
+  const filteredFood = mealCat === 'All' ? BG_FOOD : BG_FOOD.filter(f => f.meal === mealCat)
+
+  const pill = 'px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer'
+  const pillActive = 'bg-[#FF4C00] border-[#FF4C00] text-white'
+  const pillInactive = 'bg-[#0a150a] border-[#2A4A2A] text-gray-400 hover:border-[#FF4C00]/50 hover:text-white'
+
+  return (
+    <section id="backpacking" className="py-20 bg-[#0a150a]">
+      <div className="max-w-5xl mx-auto px-4">
+        <SectionHeader
+          badge="BEGINNER'S GUIDE"
+          title="Your First 3-Night Backpacking Trip"
+          sub="Everything you need to know before stepping onto a backcountry trail — gear, food, water, fire, and what Arkansas throws at first-timers."
+        />
+
+        {/* Tab bar */}
+        <div className="flex flex-wrap gap-2 justify-center mb-10">
+          {tabs.map(t => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`px-5 py-2.5 rounded-full text-sm font-bold border transition-all ${
+                tab === t.key
+                  ? 'bg-[#FF4C00] border-[#FF4C00] text-white shadow-lg scale-105'
+                  : 'bg-[#1A2E1A] border-[#2A4A2A] text-gray-400 hover:border-[#FF4C00]/50 hover:text-white'
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+
+        {/* ── PLAN FIRST ── */}
+        {tab === 'plan' && (
+          <div className="space-y-6">
+
+            {/* Loop vs Point-to-Point */}
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-4">🚗 Loop vs Point-to-Point — One Car or Two?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-4">
+                  <p className="text-[#FF4C00] font-bold text-sm mb-2">🔄 Loop Trail — 1 Vehicle</p>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-3">You start and finish at the same trailhead. Your car is waiting for you exactly where you left it. This is the <span className="text-white font-semibold">easiest option for beginners</span> — no logistics headaches.</p>
+                  <ul className="space-y-1">
+                    {['No need to coordinate a shuttle', 'Simpler logistics and planning', 'Best for: Buffalo River Loop, Lake Leatherwood', 'Downside: you see some trail twice'].map(b => (
+                      <li key={b} className="text-xs text-gray-400 flex gap-2"><span className="text-green-400">✓</span>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-4">
+                  <p className="text-[#FF4C00] font-bold text-sm mb-2">➡️ Point-to-Point — 2 Vehicles</p>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-3">You start at Trailhead A, finish at Trailhead B. One car at each end. You see entirely new terrain every day — but requires coordination with a second driver or a car shuttle service.</p>
+                  <ul className="space-y-1">
+                    {['All new scenery every mile', 'Great for Ouachita Trail sections', 'Requires 2 cars or a paid shuttle', 'Best: drive car 2 to end first, then drive together to start'].map(b => (
+                      <li key={b} className="text-xs text-gray-400 flex gap-2"><span className="text-blue-400">◆</span>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-4 bg-[#FF4C00]/10 border border-[#FF4C00]/25 rounded-xl p-4">
+                <p className="text-[#FF4C00] font-bold text-sm">💡 First-Timer Recommendation</p>
+                <p className="text-gray-300 text-sm mt-1">Do a loop for your first trip. The Hemmed-in Hollow Loop at Buffalo National River is 11 miles over 2 nights — a perfect intro to Arkansas backcountry with waterfalls, wildlife, and good water sources.</p>
+              </div>
+            </div>
+
+            {/* Arkansas Regions */}
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-4">📍 Best Arkansas Backpacking Areas</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {[
+                  { name: 'Buffalo National River', region: 'North Central AR', diff: 'Beginner–Moderate', notes: 'Free backcountry permit required (self-issued at trailhead). Crystal-clear water, towering bluffs, minimal traffic in the Lower Buffalo.' },
+                  { name: 'Ouachita National Forest', region: 'Central / Western AR', diff: 'Moderate', notes: 'The 223-mile Ouachita Trail runs east–west across the state. Do a 3-night section between two road crossings. Heavily forested, good water.' },
+                  { name: 'Ozark Highlands Area', region: 'Northwest AR', diff: 'Beginner–Moderate', notes: 'Lake Leatherwood (Eureka Springs) and the Ozark Highlands Trail. Excellent loops for first-timers. Close to Bentonville, Fayetteville.' },
+                ].map(r => (
+                  <div key={r.name} className="bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-4">
+                    <p className="text-white font-bold text-sm">{r.name}</p>
+                    <p className="text-[#FF4C00] text-xs mb-2">{r.region} · {r.diff}</p>
+                    <p className="text-gray-400 text-xs leading-relaxed">{r.notes}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Permits & Rules */}
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-4">📋 Before You Go — Checklist</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  ['Check permit requirements', 'Buffalo National River requires a free backcountry permit — self-issue at trailhead kiosks or online at recreation.gov'],
+                  ['Download offline maps', 'AllTrails Pro lets you download trail maps for offline use. Do this on WiFi before you leave — not in a parking lot with one bar of signal'],
+                  ['Tell someone your plan', 'Leave a written note with a trusted person: which trail, which trailhead, when you plan to be back, and what to do if you don\'t call by X date'],
+                  ['Check weather 3 days out', 'Arkansas spring = afternoon thunderstorm territory. The NWS forecast for your specific county is more accurate than general apps'],
+                  ['Know your water sources', 'Mark streams and springs on your map. Plan to camp within 0.5 miles of water — filtering at camp beats carrying 4 lbs of water'],
+                  ['Pack out everything', 'Leave No Trace: carry out all trash, food scraps, and waste. If you pack it in, you pack it out — no exceptions'],
+                  ['Charge all devices the night before', 'Phone, headlamp batteries, inReach, camera. Do it at home — not scrambling in your car at the trailhead'],
+                  ['Break in your boots first', 'If your hiking boots are new, wear them for 3–4 days of walking before the trip. New boots on a 3-night trip = a blister nightmare'],
+                ].map(([title, note]) => (
+                  <div key={title} className="flex gap-3 bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-3">
+                    <span className="text-green-400 text-sm mt-0.5 flex-shrink-0">☑</span>
+                    <div>
+                      <p className="text-white text-xs font-bold">{title}</p>
+                      <p className="text-gray-400 text-xs mt-0.5 leading-relaxed">{note}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── GEAR LIST ── */}
+        {tab === 'gear' && (
+          <div>
+            <div className="flex flex-wrap gap-2 justify-center mb-6">
+              {BG_CATS.map(c => (
+                <button key={c} onClick={() => setGearCat(c)} className={`${pill} ${gearCat === c ? pillActive : pillInactive}`}>{c}</button>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {filteredGear.map(item => (
+                <a
+                  key={item.name}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-5 hover:border-[#FF4C00]/50 transition-all hover:shadow-lg flex flex-col gap-3"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-2">
+                      <span className="text-2xl">{item.icon}</span>
+                      <div>
+                        <p className="text-xs text-gray-500 font-bold uppercase tracking-wide">{item.cat}</p>
+                        <p className="text-white font-bold text-sm group-hover:text-[#FF4C00] transition-colors leading-tight">{item.name}</p>
+                      </div>
+                    </div>
+                    <span className={`text-xs font-bold px-2 py-1 rounded-full flex-shrink-0 ${
+                      item.badge.includes('Critical') || item.badge.includes('Must') ? 'bg-[#FF4C00]/20 text-[#FF4C00] border border-[#FF4C00]/30' :
+                      item.badge.includes('Safety') || item.badge.includes('Arkansas') ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30' :
+                      'bg-[#1A2E1A] text-gray-400 border border-[#2A4A2A]'
+                    }`}>{item.badge}</span>
+                  </div>
+                  <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+                  <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#2A4A2A]">
+                    <span className="text-[#FF4C00] font-bold text-sm">{item.price}</span>
+                    <span className="text-xs text-gray-500 group-hover:text-[#FF4C00] transition-colors">View on Amazon →</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <p className="text-center text-xs text-gray-600 mt-6">* Prices are estimates. RunBears.com earns a small commission on Amazon purchases at no cost to you.</p>
+          </div>
+        )}
+
+        {/* ── FOOD & WATER ── */}
+        {tab === 'food' && (
+          <div className="space-y-8">
+            {/* Calorie guide */}
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-3">📊 How Much Food Do You Need?</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                {[
+                  { label: 'Target Calories/Day', val: '2,500–3,000', note: 'More if you\'re covering 10+ miles with elevation' },
+                  { label: 'Food Weight Target', val: '1.5–2 lbs/day', note: 'Per person. 3 nights = ~5–6 lbs of food per person' },
+                  { label: 'Water Minimum', val: '2–3 liters/day', note: 'More in Arkansas summer heat. Filter at every water source' },
+                ].map(s => (
+                  <div key={s.label} className="bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-4 text-center">
+                    <p className="text-[#FF4C00] font-black text-xl">{s.val}</p>
+                    <p className="text-white font-bold text-xs mt-1">{s.label}</p>
+                    <p className="text-gray-500 text-xs mt-1">{s.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Food cards */}
+            <div>
+              <div className="flex flex-wrap gap-2 justify-center mb-6">
+                {MEAL_CATS.map(c => (
+                  <button key={c} onClick={() => setMealCat(c)} className={`${pill} ${mealCat === c ? pillActive : pillInactive}`}>{c}</button>
+                ))}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {filteredFood.map(item => (
+                  <a
+                    key={item.name}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-5 hover:border-[#FF4C00]/50 transition-all flex flex-col gap-2"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className={`text-xs font-bold px-2 py-1 rounded-full border ${
+                        item.meal === 'Breakfast' ? 'bg-yellow-500/15 text-yellow-400 border-yellow-500/30' :
+                        item.meal === 'Lunch' ? 'bg-blue-500/15 text-blue-400 border-blue-500/30' :
+                        item.meal === 'Dinner' ? 'bg-[#FF4C00]/15 text-[#FF4C00] border-[#FF4C00]/30' :
+                        'bg-green-500/15 text-green-400 border-green-500/30'
+                      }`}>{item.meal}</span>
+                      {item.cals > 0 && <span className="text-xs text-gray-500 font-medium">{item.cals} cal/serving</span>}
+                    </div>
+                    <p className="text-white font-bold text-sm group-hover:text-[#FF4C00] transition-colors">{item.name}</p>
+                    <p className="text-gray-400 text-xs leading-relaxed flex-1">{item.desc}</p>
+                    <p className="text-xs text-gray-500 group-hover:text-[#FF4C00] transition-colors pt-2 border-t border-[#2A4A2A]">View on Amazon →</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Water section */}
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-4">💧 Getting Safe Water in the Backcountry</h3>
+              <div className="space-y-4">
+                {[
+                  { step: '1', title: 'Find a moving water source', body: 'Streams and rivers are safer than still water. In Arkansas, the Buffalo River and Ouachita streams are generally excellent sources — but always filter. Never drink directly from any natural source no matter how clean it looks.' },
+                  { step: '2', title: 'Fill your dirty water bag from the stream', body: 'Wade in or use a water bottle to scoop. Keep your dirty water container clearly labeled and separate from your clean water. The Platypus 2L collapsible bag works perfectly with the Sawyer Squeeze.' },
+                  { step: '3', title: 'Squeeze through your Sawyer filter', body: 'Attach the Sawyer Squeeze to the dirty bag and squeeze. Water flows through the 0.1-micron hollow fiber membrane into your clean bottle. Removes 99.99999% of bacteria and protozoa (Giardia, Cryptosporidium). Takes about 2 minutes per liter.' },
+                  { step: '4', title: 'Back-flush your filter every 2 days', body: 'Use the included syringe to push clean water backward through the Sawyer. This clears the hollow fibers and restores flow rate. Takes 30 seconds and extends filter life dramatically.' },
+                  { step: '5', title: 'Never let your Sawyer freeze', body: 'Frozen hollow fibers crack and the filter becomes useless — and you won\'t be able to tell by looking at it. In cold Arkansas nights (40°F range), sleep with your filter in your sleeping bag.' },
+                ].map(s => (
+                  <div key={s.step} className="flex gap-4">
+                    <div className="w-8 h-8 rounded-full bg-[#FF4C00] text-white font-black text-sm flex items-center justify-center flex-shrink-0 mt-0.5">{s.step}</div>
+                    <div>
+                      <p className="text-white font-bold text-sm">{s.title}</p>
+                      <p className="text-gray-400 text-xs leading-relaxed mt-1">{s.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── FIRE & CAMP ── */}
+        {tab === 'fire' && (
+          <div className="space-y-6">
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-4">🔥 How to Build a Campfire — Step by Step</h3>
+              <div className="bg-yellow-500/10 border border-yellow-500/25 rounded-xl p-4 mb-5">
+                <p className="text-yellow-400 font-bold text-sm">⚠️ Check Fire Regulations First</p>
+                <p className="text-gray-300 text-xs mt-1 leading-relaxed">Buffalo National River, Ouachita NF, and Ozark NF all have seasonal fire bans during dry conditions. Check the forest service website or call the ranger station before your trip. Violating a fire ban carries serious fines. When in doubt, cook on your camp stove — it's faster and lighter anyway.</p>
+              </div>
+              <div className="space-y-5">
+                {[
+                  { step: '1', title: 'Use an existing fire ring', body: 'Always build in an established fire ring or fire pan — never create a new ring. If no ring exists and fires are allowed, build on bare mineral soil, far from roots and duff.' },
+                  { step: '2', title: 'Gather tinder, kindling, and fuel separately', body: 'Tinder: dry leaves, pine needles, birch bark, dry grass — anything that lights with a single match. Kindling: pencil-sized dry sticks. Fuel: wrist-thick dry logs. Collect 3x more than you think you need.' },
+                  { step: '3', title: 'Build a teepee of kindling over your tinder', body: 'Place a golf ball of tinder in the center. Lean kindling sticks against each other in a teepee shape over it, leaving an opening on the windward side to light through.' },
+                  { step: '4', title: 'Light the tinder at the base', body: 'Use a lighter or waterproof matches. Light the tinder from the bottom, sheltered from wind. Gently blow at the base — you\'re feeding oxygen to the baby flame. Don\'t blow from above.' },
+                  { step: '5', title: 'Add fuel gradually as the kindling catches', body: 'Once the kindling is burning, add wrist-thick fuel logs in a teepee or log cabin pattern. Don\'t smother the fire — leave space for airflow. Add one log at a time.' },
+                  { step: '6', title: 'Extinguish completely before sleeping', body: '"Dead out" means cold to the touch — not just dark. Pour water on the coals, stir with a stick, pour more water, stir again. Repeat until the hiss stops and every coal is cold. A forgotten ember can smolder for hours and start a forest fire.' },
+                ].map(s => (
+                  <div key={s.step} className="flex gap-4">
+                    <div className="w-8 h-8 rounded-full bg-[#FF4C00] text-white font-black text-sm flex items-center justify-center flex-shrink-0 mt-0.5">{s.step}</div>
+                    <div>
+                      <p className="text-white font-bold text-sm">{s.title}</p>
+                      <p className="text-gray-400 text-xs leading-relaxed mt-1">{s.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-6">
+              <h3 className="text-lg font-black text-white mb-4">🏕️ Setting Up Camp — The Right Way</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  { icon: '⛺', title: 'Campsite Location', body: 'Camp at least 200 feet (70 adult steps) from any water source, trail, or other campers. Look for flat ground with good drainage — not a low spot that floods in rain.' },
+                  { icon: '🍔', title: 'The Bear Triangle', body: 'Set up your kitchen, food storage, and sleeping tent in a triangle — 200 feet apart. Cook and eat in one spot, hang food in another, sleep in the third. Never eat in your tent.' },
+                  { icon: '🌲', title: 'Hang Your Food (Bear Bag)', body: 'Throw a rope over a branch 15+ feet high and 6+ feet from the trunk. Put all food, trash, and anything scented (toothpaste, sunscreen) in the bag. Hang 10+ feet off the ground.' },
+                  { icon: '💨', title: 'Tent Orientation', body: 'Orient your tent door away from prevailing wind. Stake it out tightly — a loose tent in an Arkansas thunderstorm flaps loudly and can be damaged. Use all the guy lines.' },
+                  { icon: '🚰', title: 'Camp Near Water (Not On It)', body: 'Camp close enough to access water easily (within 5 min walk) but 200 feet away. Camping on a stream bank erodes fragile riparian habitat and you\'ll deal with condensation and insects.' },
+                  { icon: '🕐', title: 'Arrive Early', body: 'Plan to reach your campsite by 3–4pm. Setting up camp in the dark is miserable. Give yourself time to filter water, cook dinner while there\'s still light, and hang your food before dark.' },
+                ].map(c => (
+                  <div key={c.title} className="bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-4">
+                    <p className="text-2xl mb-2">{c.icon}</p>
+                    <p className="text-white font-bold text-sm mb-1">{c.title}</p>
+                    <p className="text-gray-400 text-xs leading-relaxed">{c.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── WATCH OUT FOR ── */}
+        {tab === 'watch' && (
+          <div className="space-y-5">
+            {[
+              {
+                icon: '🕷️',
+                title: 'Ticks & Chiggers',
+                sev: 'HIGH priority in Arkansas',
+                sevColor: 'text-[#FF4C00]',
+                body: 'Arkansas has dense Lone Star tick populations (aggressive, bite in daylight), Black-legged ticks (Lyme disease carrier), and chiggers year-round in grass and brush. This is your biggest real threat — not bears. Treat all clothing with Permethrin before the trip. Do a full body tick check every evening at camp. Pull ticks with fine-tip tweezers, grasping as close to the skin as possible. Never twist — pull straight out.',
+              },
+              {
+                icon: '🐍',
+                title: 'Venomous Snakes',
+                sev: 'Real — watch where you step',
+                sevColor: 'text-yellow-400',
+                body: 'Arkansas has four venomous species: Copperhead (most common — often on rocky trails), Timber Rattlesnake (rare but present in the Ozarks and Ouachitas), Western Cottonmouth (water edges), and Western Pygmy Rattlesnake. Never reach under logs or rocks with your bare hands. Always look before you step over a log. Most bites occur when people accidentally step on or pick up a snake. Wear ankle-height hiking boots minimum.',
+              },
+              {
+                icon: '⛈️',
+                title: 'Afternoon Thunderstorms',
+                sev: 'Spring & Summer — plan around them',
+                sevColor: 'text-blue-400',
+                body: 'Arkansas spring and summer afternoons frequently produce severe thunderstorms with lightning, high winds, and flash floods. Check the NWS forecast for your specific county before the trip. Plan to be at camp or sheltered by 2pm if storms are in the forecast. If caught in lightning: get off ridges immediately, avoid tall isolated trees and open fields. Move to low ground in a cluster of smaller trees. Flash floods can turn dry creek beds into raging rivers in 20 minutes — never camp in a creek bed.',
+              },
+              {
+                icon: '🐻',
+                title: 'Black Bears',
+                sev: 'Low risk — but take it seriously',
+                sevColor: 'text-green-400',
+                body: 'Arkansas has an estimated 5,000 Black Bears, primarily in the Ouachita and Ozark mountains. Encounters are rare but real. Hang your food 200 feet from your tent. Make noise on the trail — bears almost always leave before you see them. If you do encounter a Black Bear: stand your ground, make yourself look large, speak firmly, and back away slowly. Do NOT run. Do NOT play dead with a Black Bear — fight back if attacked. Carry bear spray accessible on your hip.',
+              },
+              {
+                icon: '💦',
+                title: 'Flash Floods & Creek Crossings',
+                sev: 'Underestimated by beginners',
+                sevColor: 'text-yellow-400',
+                body: 'The Buffalo River watershed and Ouachita creek drainages can rise 6+ feet in under an hour during heavy rain. Never camp in a creek bed or flood zone. When crossing streams, unbuckle your hip belt and sternum strap before entering — so you can shed your pack if you fall. Use a trekking pole for stability. If the water is above your knee and moving fast, find a different crossing point or wait it out.',
+              },
+              {
+                icon: '😰',
+                title: 'Heat & Humidity',
+                sev: 'June–August — serious risk',
+                sevColor: 'text-[#FF4C00]',
+                body: 'Arkansas summers are brutally hot and humid. Heat index regularly exceeds 100°F in July and August. Signs of heat exhaustion: heavy sweating, weakness, cold/pale/clammy skin, fast/weak pulse, nausea. Move to shade, cool with wet clothing, drink electrolytes. Heat stroke (no sweating, hot/red/dry skin, rapid strong pulse, confusion) is a medical emergency — call for help immediately. Hike early mornings, rest mid-day, hike again evening. Carry electrolyte packets and stay aggressively hydrated.',
+              },
+              {
+                icon: '🗺️',
+                title: 'Getting Lost',
+                sev: 'Happens more than you think',
+                sevColor: 'text-yellow-400',
+                body: 'Cell signal is unreliable or nonexistent in Arkansas backcountry. Download your trail maps offline on AllTrails before you leave home. Mark your trailhead on your phone as a saved location. Always know which way is downhill to a road. If you think you\'re lost: Stop. Sit down. Think before you move. Look for trail markers (usually blazes painted on trees in AR). If you have a satellite communicator, use it — that\'s what it\'s for.',
+              },
+              {
+                icon: '🦶',
+                title: 'Blisters & Foot Care',
+                sev: 'Most common trip-ender',
+                sevColor: 'text-gray-400',
+                body: 'Blisters are the #1 reason first-timers cut trips short. Prevention: break in your boots before the trip, wear merino wool socks (never cotton), change socks daily, and address hot spots immediately — don\'t wait for a blister to form. Treatment: drain with a sterilized needle, apply antibiotic ointment, cover with moleskin. Cut moleskin in a donut shape around the blister, not over it. Duct tape on top of moleskin adds durability for long days.',
+              },
+            ].map(item => (
+              <div key={item.title} className="bg-[#0d1f0d] border border-[#2A4A2A] rounded-2xl p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">{item.icon}</span>
+                  <div>
+                    <p className="text-white font-black text-base">{item.title}</p>
+                    <p className={`text-xs font-bold ${item.sevColor}`}>{item.sev}</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+            <div className="bg-[#FF4C00]/10 border border-[#FF4C00]/30 rounded-2xl p-5 text-center">
+              <p className="text-[#FF4C00] font-black text-lg mb-2">🏔️ You're More Ready Than You Think</p>
+              <p className="text-gray-300 text-sm leading-relaxed max-w-2xl mx-auto">Thousands of people take their first backpacking trip every year and have an incredible time. The key is preparation: the right gear, the right food, and knowing what to expect. Arkansas has some of the most beautiful wilderness in the American South. Get out there.</p>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // FOOTER
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -2204,6 +2647,7 @@ export default function App() {
         </div>
 
         <GearStore />
+        <BackpackingGuide />
         <RecentSightings />
       </main>
 
