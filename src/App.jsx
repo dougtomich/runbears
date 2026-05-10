@@ -34,7 +34,7 @@ const BEARS = [
     pop: '~900,000',
     color: 'Black, cinnamon, or blonde',
     habitat: 'Forests across North America',
-    img: 'https://images.unsplash.com/photo-Yyn1LoigU1A?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1603204390039-7488a29bc389?w=600&q=80',
     desc: "North America's most common bear. Despite the name, their coats range from glossy black to cinnamon brown to blonde. Generally shy and non-confrontational with humans — the only bear species in the eastern US.",
     triggers: 'Mothers with cubs are the primary danger. Food-conditioned bears near campgrounds are the second. Rarely attacks without provocation.',
     interact: 'Stand your ground — do NOT run. Make yourself appear large. Speak calmly but firmly. Deploy bear spray at 60 feet. If contact occurs: FIGHT BACK aggressively targeting eyes and nose. NEVER play dead with a Black Bear.',
@@ -49,7 +49,7 @@ const BEARS = [
     pop: '~55,000 (North America)',
     color: 'Brown with silver-tipped guard hairs',
     habitat: 'Alaska, western Canada, northern Rockies',
-    img: 'https://images.unsplash.com/photo-2ZXrBR4ByAQ?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1576076819613-26f8537ae375?w=600&q=80',
     desc: 'The iconic apex predator of the American West, identifiable by a pronounced shoulder hump and dish-shaped face profile. Far more territorial and less tolerant of humans than Black Bears. Primary threat to backcountry hikers.',
     triggers: 'Surprise encounters at close range (#1 cause of attacks), defending cubs, and protecting cached food kills. Attacks can come with zero warning signs.',
     interact: 'Defensive attack: PLAY DEAD (face down, hands laced behind neck, legs spread to resist rolling). Remain still until bear leaves completely. Predatory attack (stalking/night): FIGHT BACK with everything available.',
@@ -79,7 +79,7 @@ const BEARS = [
     pop: '~3,500 (Kodiak Island only)',
     color: 'Dark to medium brown',
     habitat: 'Kodiak Island Archipelago, Alaska',
-    img: 'https://images.unsplash.com/photo-xqF8ehxskHo?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1517103068540-6a70e8c0022f?w=600&q=80',
     desc: 'A subspecies of Brown Bear isolated on Kodiak Island for 12,000 years, producing the second largest land carnivore on Earth. Males can exceed 1,500 lbs in fall. Generally tolerant near salmon streams but enormously powerful.',
     triggers: 'Same as Grizzly: surprise encounters, cubs, food caches. Particularly dangerous near salmon streams during runs when competition for resources is highest.',
     interact: 'Same protocols as Grizzly. Play dead (face down) for defensive attacks. Fight back if the attack is predatory or continues after playing dead. Bear spray is highly effective even on these massive animals.',
@@ -94,7 +94,7 @@ const BEARS = [
     pop: '~400 (Great Bear Rainforest, BC)',
     color: 'Cream/white (recessive gene — not albino)',
     habitat: "Princess Royal Island & BC's mid-coast",
-    img: 'https://images.unsplash.com/photo-szfklEKYZDQ?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1657580437400-92777b2fc546?w=600&q=80',
     desc: 'A rare white-coated subspecies of the American Black Bear, sacred to the Gitga\'at and Kitasoo First Nations peoples of BC. The cream coloring comes from a recessive gene — not albinism. Found only in old-growth temperate rainforest.',
     triggers: 'Same behavioral triggers as Black Bear. Extremely rare to encounter. These bears are under active conservation and governance by local First Nations.',
     interact: 'Same as Black Bear: stand firm, appear large, speak calmly, back away slowly. Fight back if attacked. Report all sightings immediately — these bears are critically rare and data on encounters is valuable.',
@@ -109,11 +109,143 @@ const BEARS = [
     pop: '~4,000',
     color: 'Glossy black with tan muzzle',
     habitat: 'Ocala National Forest, Osceola, SW Florida',
-    img: 'https://images.unsplash.com/photo-9bbThAkVczA?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1715412406838-93eed8537465?w=600&q=80',
     desc: "Florida's only native bear species — a subtropical subspecies of the American Black Bear adapted to Florida's warm, humid climate. Rebounded from near extinction in the 1970s to over 4,000 individuals through conservation efforts.",
     triggers: 'Unsecured garbage and food attractants near neighborhoods are the leading cause of encounters. Most incidents involve food-conditioned bears. Mothers with cubs from January (earliest birth timing of any US bear).',
     interact: 'Make yourself large and loud. Back away without running. Deploy bear spray if charged. Fight back if contact occurs — same as all Black Bear encounters. Most importantly: NEVER FEED THESE BEARS.',
     neverDo: 'Never leave garbage cans or pet food outdoors — a fed Florida Black Bear is typically euthanized.',
+  },
+]
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BEAR LORE  (educational deep-dives per species)
+// ─────────────────────────────────────────────────────────────────────────────
+const BEAR_LORE = [
+  {
+    name: 'American Black Bear',
+    emoji: '🐻',
+    origin: "The American Black Bear is North America's oldest bear lineage, having evolved from Ursus etruscus roughly 2.5 million years ago. Their ancestors crossed the Bering Land Bridge from Asia during a Pleistocene glaciation. As the Ice Age ended and forests expanded across the continent, Black Bears thrived and diversified into at least 16 recognized subspecies — from the cinnamon bears of the Rockies to the blonde bears of Alaska's Kenai Peninsula. They were here long before the first humans arrived on this continent.",
+    habits: [
+      'Crepuscular by nature — most active at dawn and dusk, sleeping through the hottest midday hours.',
+      'True hibernators: heart rate drops from 50 bpm to just 8 bpm; they neither eat, drink, nor defecate for up to 7 months.',
+      'Omnivores who eat roughly 85% plants — berries, acorns, grasses, roots — supplemented by insects, fish, and the occasional fawn.',
+      'Exceptional tree climbers and swimmers. Cubs instinctively flee to trees for safety within weeks of leaving the den.',
+      'Highly intelligent problem-solvers with remarkable spatial memory — they can remember fruit trees and berry patches for decades.',
+    ],
+    motivations: "Food is everything. In autumn, Black Bears enter hyperphagia — a relentless biological drive to consume 15,000–20,000 calories per day to build fat reserves for winter. A Black Bear's entire yearly schedule revolves around food: where it is, when it ripens, and how to reach it. Reproduction is the second great driver — males travel enormous home ranges each June seeking receptive females.",
+    love: "Black Bears are a landmark conservation success story. In the early 1900s, overhunting and habitat loss had decimated populations across the eastern US. Today, nearly 900,000 thrive across North America — one of the greatest wildlife recoveries in history. They're also keystone seed dispersers: a single bear can spread thousands of seeds across miles of forest per day. And despite their reputation, they are overwhelmingly shy, non-confrontational animals who want nothing more than to be left alone with a berry patch.",
+    facts: [
+      'A Black Bear can sprint to 30 mph — faster than any Olympic sprinter.',
+      'Their sense of smell is 7x stronger than a bloodhound\'s and over 2,000x more powerful than a human\'s.',
+      'Black Bears are the only bear species in which males play no role in raising cubs whatsoever.',
+      'A mother bear loses up to 40% of her body weight during hibernation while nursing her newborn cubs.',
+      'Their population has fully recovered — from near-zero in parts of the East to 900,000+ across North America.',
+    ],
+  },
+  {
+    name: 'Grizzly Bear',
+    emoji: '🐻',
+    origin: 'Grizzlies are a North American subspecies of Brown Bear (Ursus arctos), which evolved in Asia roughly 1.8 million years ago. Their ancestors crossed the Bering Land Bridge between 50,000 and 100,000 years ago — far more recently than Black Bears. They quickly spread south following salmon-rich river systems. By the time Lewis and Clark encountered them in 1804, an estimated 50,000–100,000 Grizzlies roamed the American West. Today, fewer than 2,000 survive in the contiguous US — primarily in the Greater Yellowstone and Northern Continental Divide ecosystems.',
+    habits: [
+      'Among the most powerful foragers on Earth — consuming pine nuts, roots, moths, berries, ground squirrels, elk calves, and salmon, sometimes within the same week.',
+      'They dig with claws up to 4 inches long to excavate ground squirrel colonies and uproot hillsides for camas bulbs.',
+      'At salmon rivers, a dominance hierarchy forms — the largest bears claim the best fishing spots. Brooks Falls in Alaska hosts the most spectacular bear watching on Earth.',
+      'Despite weighing up to 800 lbs, Grizzlies sprint at 35 mph with terrifying, explosive acceleration.',
+      'Females give birth every 2–3 years — one of the slowest reproductive rates of any North American mammal.',
+    ],
+    motivations: "Grizzlies are driven by the same fall hyperphagia as Black Bears. But they are also deeply territorial — especially boars protecting home ranges. The fiercest motivation of all? Maternal protection. A Grizzly sow is arguably the most ferocious mother in North American wildlife. She will charge a vehicle, a human, or another bear without hesitation if her cubs are threatened. That's not rage — it's ancient, absolute love.",
+    love: "Grizzly Bears are ecosystem engineers of the highest order. Each salmon they drag inland from a river deposits marine nitrogen into the forest soil, fertilizing trees up to 500 meters from the bank. Forests without Grizzlies are measurably less productive. They hold deep spiritual significance to over 100 indigenous nations across North America. And the Grizzly's return to Yellowstone — declared a recovery success in 2017 — is one of the most inspiring conservation achievements in American history.",
+    facts: [
+      "A Grizzly's bite force of 1,200 PSI can crush a bowling ball.",
+      'They have an extraordinary memory, returning to specific food sources with pinpoint accuracy years later.',
+      'Grizzly and Polar Bear hybrids ("Pizzly" or "Grolar" bears) occur naturally and have been documented in the wild.',
+      'During hyperphagia, a Grizzly may eat 20,000 calories per day, gaining 3–6 lbs of fat daily.',
+      'Yellowstone Grizzlies have learned to follow wolf packs and steal elk kills — directly benefiting from wolf reintroduction.',
+    ],
+  },
+  {
+    name: 'Polar Bear',
+    emoji: '🧊',
+    origin: "Polar Bears are the youngest bear species, having diverged from Brown Bears between 400,000 and 600,000 years ago — a breathtakingly rapid evolutionary transformation. Their closest living relatives are the Brown Bears of Alaska's ABC Islands. In just a few hundred thousand years, they evolved from an omnivorous forest bear into the world's largest land carnivore — perfectly adapted to the harshest environment on Earth. Their fur appears white but is actually colorless and hollow; their skin beneath is jet black.",
+    habits: [
+      'Marathon swimmers — they can travel 60+ miles non-stop using their massive forepaws as paddles. One female was tracked swimming 426 miles in 9 days.',
+      'Unlike other bears, Polar Bears are obligate carnivores. Ringed seals make up 90%+ of their diet, hunted by lying motionless at breathing holes for hours.',
+      'Nomadic rather than territorial, following seasonal sea ice across ranges that can exceed 100,000 square miles.',
+      'Only pregnant females den. Males and non-pregnant females remain active year-round — including through Arctic winters of total darkness.',
+      'Young bears spend up to 2 years playing and mock-fighting with siblings to learn the survival skills they will need as adults.',
+    ],
+    motivations: "Unlike every other bear, a Polar Bear's primary motivator is not seasonal hyperphagia but constant survival. As sea ice disappears due to climate change, bears are forced to fast for longer periods — sometimes 4–8 months without significant food. Their entire existence is now a race against a changing environment. What drives them most fundamentally: the hunt, the kill, and the next breath of Arctic air.",
+    love: "Polar Bears are an umbrella species — protecting them means protecting the entire Arctic ecosystem: sea ice, ringed seals, walrus, Arctic foxes, and countless seabirds all exist within the same web. They're also remarkably playful and curious animals. Videos of Polar Bears gently playing with sled dogs or poking at cameras left in the snow reveal a species of genuine intelligence and curiosity. They are in crisis — the IUCN classifies them as Vulnerable, with near-total habitat loss projected by 2100 if emissions continue unchecked.",
+    facts: [
+      'Polar Bear liver contains toxic levels of Vitamin A — historically fatal to Arctic explorers who ate it.',
+      "A Polar Bear's fur appears white but is actually clear and hollow, acting as a light-conducting fiber optic.",
+      'Despite weighing up to 1,500 lbs, they can walk silently across thin ice by distributing their weight.',
+      'Baby Polar Bear cubs are born roughly the size of a guinea pig — about 1.5 lbs.',
+      'Polar Bears have been observed using chunks of ice and rocks as tools to break into seal dens.',
+    ],
+  },
+  {
+    name: 'Kodiak Brown Bear',
+    emoji: '🏔️',
+    origin: "The Kodiak Brown Bear is the product of 12,000 years of isolation. When sea levels rose at the end of the last Ice Age, the Kodiak Archipelago was cut off from the Alaskan mainland — and the bears on the island began evolving independently. Over millennia, the extraordinary richness of Kodiak's salmon runs enabled them to grow far larger than their mainland cousins. Today the Kodiak is the largest bear subspecies on Earth and the second-largest land carnivore after the Polar Bear, with males regularly exceeding 1,200 lbs and standing 10 feet tall on their hind legs.",
+    habits: [
+      "Among the greatest fishers in the animal kingdom — during the July–October salmon runs, dozens of Kodiak Bears congregate at rivers and falls in remarkable proximity.",
+      "Their fishing techniques are learned, not instinctive. Young bears observe their mothers and experiment with different methods across multiple seasons.",
+      "Despite enormous size, Kodiaks are excellent climbers. They excavate dens deep into hillsides, often reusing and expanding the same den across generations.",
+      "The Kodiak Bear Management Area restricts human access to much of the archipelago, making these among the least human-habituated large bears on Earth.",
+      'Their home ranges are vast — a single male may patrol 500+ square miles of coastline, mountain, and river valley.',
+    ],
+    motivations: "Salmon. The entire biological year of a Kodiak Bear is structured around the salmon run — perhaps the most dramatic wildlife spectacle in North America. A large male can consume 20 salmon per day during peak run, eating only the roe and brain (the highest caloric parts) before discarding the carcass for eagles and ravens. They must double their body weight before denning for winter.",
+    love: "Kodiak Island is one of the last places on Earth where you can witness nature operating at full, undiminished scale. These bears have never been extirpated, never brought back from the brink — they have simply persisted, enormous and magnificent, on their island for 12,000 years. Every salmon carcass a Kodiak Bear drags into the forest becomes a nutrient pulse that feeds alder, spruce, and wildflowers. The entire island ecosystem breathes on the rhythm of the bear and the salmon.",
+    facts: [
+      "A large male Kodiak stands 10 feet tall on its hind legs — taller than a regulation NBA basketball hoop.",
+      "Kodiak Bears can detect a food source from up to 20 miles away under the right wind conditions.",
+      "The largest Kodiak ever recorded weighed over 2,200 lbs in captivity.",
+      "Despite their size, Kodiaks can outrun a horse over short distances.",
+      "Kodiak Island has one of the highest densities of Bald Eagles in the world — drawn by salmon carcasses left by the bears.",
+    ],
+  },
+  {
+    name: 'Spirit Bear (Kermode Bear)',
+    emoji: '✨',
+    origin: "The Spirit Bear is not a separate species but a rare color morph of the American Black Bear, caused by a recessive mutation in the MC1R gene — the same gene responsible for red hair in humans. When two Black Bears both carry this recessive mutation, their cubs have a ~25% chance of being born white. The mutation likely became widespread in the isolated Great Bear Rainforest because the white coloring offered a measurable advantage: fish cannot see a white bear against the bright sky above, making Spirit Bears more effective salmon hunters than their black-furred siblings.",
+    habits: [
+      "Spirit Bears live primarily on Princess Royal Island and neighboring islands in BC's Great Bear Rainforest — one of the most pristine temperate rainforests remaining on Earth.",
+      "Research shows Spirit Bears catch salmon up to 30% more successfully than black-furred Black Bears fishing the same streams.",
+      "Their range is monitored and partially governed by the Gitga'at and Kitasoo/Xai'xais First Nations, who protected these bears long before Western conservation.",
+      "Highly solitary and incredibly elusive — even experienced local guides may go weeks without a confirmed sighting.",
+      "They share all the core habits of American Black Bears: omnivorous diet, excellent tree climbing, and seasonal salmon fishing.",
+    ],
+    motivations: "The same motivations as any Black Bear — food, shelter, reproduction — but with one extraordinary twist: their white coloring provides a measurable survival advantage in salmon streams. Evolution has quietly optimized the Spirit Bear's coat into a fishing tool. Every individual matters enormously to a population of only ~400 animals.",
+    love: "There are roughly 400 Spirit Bears in existence. They represent one of nature's most beautiful accidents: a single gene variant producing an animal of haunting, ethereal beauty that is sacred to First Nations peoples who have protected it for centuries. The Gitga'at Nation calls the Spirit Bear 'Moksgm'ol' — a sacred messenger. Their existence and the old-growth rainforest that shelters them remain under active threat from logging. Protecting the Spirit Bear means protecting one of the rarest ecosystems on the Pacific Coast.",
+    facts: [
+      "Two entirely black-furred Black Bears can produce a white Spirit Bear cub if both carry the recessive gene.",
+      "Spirit Bears are not albino — they have normal pigmentation in their eyes and nose.",
+      "The Great Bear Rainforest is home to 25% of the world's remaining coastal temperate rainforest.",
+      "Scientific research on Spirit Bears was conducted largely in collaboration with Gitga'at Nation members who had protected them for generations.",
+      "A Spirit Bear sighting is considered rarer than seeing a wild snow leopard — one of the rarest wildlife encounters on Earth.",
+    ],
+  },
+  {
+    name: 'Florida Black Bear',
+    emoji: '🌴',
+    origin: "The Florida Black Bear is a subtropical subspecies of the American Black Bear that became isolated in Florida after the last Ice Age, roughly 10,000 years ago. As the climate warmed and the Florida peninsula separated from the mainland forest corridor, these bears adapted to scrub oak flatwoods, cypress swamps, and coastal marshes unlike any other North American bear. By the 1970s, habitat destruction and hunting had reduced their population to fewer than 300 individuals. Through a landmark conservation effort, the Florida Fish and Wildlife Conservation Commission oversaw their recovery to over 4,000 bears today — one of the greatest state-level wildlife recoveries in US history.",
+    habits: [
+      "Florida Black Bears do not truly hibernate — winters are too warm. They enter brief periods of torpor during cold snaps but can be roused easily and may forage year-round.",
+      "Among the most omnivorous bears in North America: saw palmetto berries, cabbage palm hearts, blueberries, armadillos, and, unfortunately, garbage.",
+      "Florida bears breed in June–July and give birth in January — among the earliest birthing of any US bear, adapted to Florida's mild winters.",
+      "Largely nocturnal near human development — a behavioral adaptation to living alongside 22 million people in one of the fastest-growing states in the US.",
+      "Highly capable swimmers: they cross lakes, estuaries, and have been documented moving between barrier islands miles offshore.",
+    ],
+    motivations: "Survival in a landscape dominated by humans. Unlike remote wilderness bears, Florida Black Bears must navigate roads, subdivisions, golf courses, and citrus groves to find food. Their greatest motivation — like all Black Bears — is food, and in Florida, that increasingly means unsecured garbage. Their adaptation to human landscapes is both a triumph and a tragedy: it enables survival, but it leads to conflicts that often end with the bear being euthanized.",
+    love: "The Florida Black Bear comeback is one of the most remarkable wildlife conservation stories in American history. From near-extinction to 4,000+ bears in roughly 40 years — driven by citizen science, wildlife corridors, and public education. They are uniquely adapted to one of the most ecologically diverse and fragile ecosystems in North America. Florida Black Bears are seed dispersers for saw palmetto, gopher apple, and dozens of native Florida plants — making them a keystone species for scrub habitat that hundreds of other species depend on.",
+    facts: [
+      "Florida Black Bears have no natural predators as adults — only humans and vehicles pose a significant threat.",
+      "The Ocala National Forest hosts the densest Florida Black Bear population — over 1,000 bears in a single forest.",
+      "Florida bears have been documented swimming miles offshore to reach barrier islands.",
+      "A food-conditioned Florida bear can smell a garbage can's contents from over a mile away.",
+      "Florida Black Bears are one of the few bear subspecies that regularly live within major metropolitan areas, including suburban Orlando.",
+    ],
   },
 ]
 
@@ -402,6 +534,7 @@ function Navbar({ openModal }) {
     ['Pace Calc', '#pace'],
     ['Bear Bell', '#bell'],
     ['Bear Library', '#library'],
+    ['Bear World', '#bearworld'],
     ['How to Interact', '#interact'],
     ['Gear Store', '#gear'],
     ['Sightings', '#sightings'],
@@ -979,6 +1112,119 @@ function BearCard({ bear, open, onToggle }) {
         )}
       </div>
     </div>
+  )
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BEAR WORLD — educational deep-dive section
+// ─────────────────────────────────────────────────────────────────────────────
+function BearWorld() {
+  const [activeIdx, setActiveIdx] = useState(0)
+  const [openSec, setOpenSec] = useState('origin')
+  const bear = BEAR_LORE[activeIdx]
+
+  const sections = [
+    { key: 'origin',      label: '🌍 Origins & Evolution',    content: bear.origin },
+    { key: 'habits',      label: '🕐 Daily Life & Habits',    content: bear.habits },
+    { key: 'motivations', label: '💡 What Motivates Them',    content: bear.motivations },
+    { key: 'love',        label: '❤️ Why We Love Them',       content: bear.love },
+  ]
+
+  const toggle = (key) => setOpenSec((prev) => (prev === key ? null : key))
+
+  return (
+    <section id="bearworld" className="py-20 bg-[#0d1f0d]">
+      <div className="max-w-5xl mx-auto px-4">
+        <SectionHeader
+          badge="BEAR WORLD"
+          title="Know Your Bear"
+          sub="Dive deep into the lives, evolutionary history, daily habits, and natural wonders of North America's six remarkable bear species."
+        />
+
+        {/* Species tabs */}
+        <div className="flex flex-wrap gap-2 justify-center mb-10">
+          {BEAR_LORE.map((b, i) => (
+            <button
+              key={b.name}
+              onClick={() => { setActiveIdx(i); setOpenSec('origin') }}
+              className={`px-4 py-2 rounded-full text-sm font-bold transition-all border ${
+                activeIdx === i
+                  ? 'bg-[#FF4C00] border-[#FF4C00] text-white shadow-lg scale-105'
+                  : 'bg-[#0a150a] border-[#2A4A2A] text-gray-400 hover:border-[#FF4C00]/50 hover:text-white'
+              }`}
+            >
+              {b.emoji} {b.name.replace(' (Kermode Bear)', '')}
+            </button>
+          ))}
+        </div>
+
+        {/* Content card */}
+        <div className="bg-[#0a150a] border border-[#2A4A2A] rounded-2xl overflow-hidden">
+
+          {/* Card header */}
+          <div className="px-6 py-5 border-b border-[#2A4A2A] flex items-center gap-4 bg-[#1A2E1A]/40">
+            <span className="text-5xl leading-none">{bear.emoji}</span>
+            <div>
+              <h3 className="text-xl font-black text-white">{bear.name}</h3>
+              <p className="text-xs text-gray-500 mt-1">Select a section below to expand the deep-dive</p>
+            </div>
+          </div>
+
+          {/* Accordion rows */}
+          <div className="divide-y divide-[#2A4A2A]">
+            {sections.map((sec) => (
+              <div key={sec.key}>
+                <button
+                  className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[#1A2E1A]/40 transition-colors group"
+                  onClick={() => toggle(sec.key)}
+                >
+                  <span className="font-bold text-[#FF4C00] group-hover:text-orange-400 transition-colors text-sm sm:text-base">
+                    {sec.label}
+                  </span>
+                  <span
+                    className={`text-gray-500 text-sm transition-transform duration-200 ${openSec === sec.key ? 'rotate-180' : ''}`}
+                  >
+                    ▼
+                  </span>
+                </button>
+
+                {openSec === sec.key && (
+                  <div className="px-6 pb-6 pt-2 bg-[#1A2E1A]/20">
+                    {Array.isArray(sec.content) ? (
+                      <ul className="space-y-3">
+                        {sec.content.map((item, i) => (
+                          <li key={i} className="flex gap-3 text-gray-300 text-sm leading-relaxed">
+                            <span className="text-[#FF4C00] mt-0.5 flex-shrink-0 font-bold">▸</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-300 text-sm leading-relaxed">{sec.content}</p>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Fun facts strip */}
+          <div className="border-t border-[#2A4A2A] px-6 py-6 bg-[#0a150a]">
+            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">⚡ Did You Know?</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {bear.facts.map((f, i) => (
+                <div
+                  key={i}
+                  className="bg-[#1A2E1A] border border-[#2A4A2A] rounded-xl p-4 hover:border-[#FF4C00]/30 transition-colors"
+                >
+                  <p className="text-gray-300 text-xs leading-relaxed">{f}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
@@ -1948,6 +2194,7 @@ export default function App() {
         <PaceCalc />
         <BearBell />
         <BearLibrary />
+        <BearWorld />
         <BehaviorTriggers />
         <HowToInteract />
 
